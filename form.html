@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form in html</title>
+</head>
+<body>
+    <h1>Application FORM</h1>
+   <!-- <p>data collect store, label for is used for binding particular field[id] elements</p>  -->
+    <form>
+       <label for="name">Name:</label>
+       <input type="text" id="name" placeholder="Enter your name" required />
+       <br>  <br>
+       <label for="E-mail">E-mail:</label>
+       <input type="email" id="E-mail" placeholder="Enter your mail" required/>
+       <br>  <br>
+       <label for="phone no">phone no:</label>
+       <input type="number" id="phone no" placeholder="Enter your phone no"/><br><br>
+       <label >Gender:</label>
+       <input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="female"> Female
+       <br><br>
+       <label for="dob">Date of Birth</label>
+       <input type="date" id="dob" />
+       <br><br>
+     <fieldset>
+        <legend>Addresses details:</legend>
+        <label for="state">state:</label>
+        <input type="text" id="state" placeholder="your state Adress"/><br><br>
+        <label for="city">City:</label>
+        <input type="text" id="city" placeholder="your city"/>
+        <br><br>
+        <label for="pin">pincode:</label>
+        <input type="number" id="pin" placeholder="your city Adress"/>
+     </fieldset><br>
+     <label for="password">Enter your password:</label><br><br>
+     <input type="password" id="password" placeholder="enter password" required/><br><br>
+     <label for="psw-repeat">Re-type Password</label><br>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  <br><br>
+     <button onclick="SubmitEvent">submit</button>
+    </form>
+</body>
+</html>
